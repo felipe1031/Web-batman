@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>The Dark Knight </title> 
+<style type="text/css"> *{padding:0; margin:0 } </style>
+<!-- Este style es para que mi menu quedara parejo  en la separacion de la lista--> 
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="img/StylesBodySheet.css"> 
+<link rel="icon" type="image/PGN" href="img/BatLogoShine.png"> <!-- el logo,de la pestañita, para no ver desde el principio la hoja por defecto que muestarn la mayoria de navegadores--> 
+<link rel="stylesheet" href="img/font1/font1.css"> <!-- hay una sola hoja dedicada a la fuente extraña que uso porque use una aplicacion en internet que pasaba del formato ttf a woff que es que funciona bien con los navegadores si esta alojado en el servidor, la aplicacion creo una carpta con una hoja de estilos solo para la fuente-->  <!--   este script es el de youtube para que me pueda mostar un vide que se encintra al final --> 
+<script src="src/phaser.min.js"></script>
+  <script src="src/Boot.js"></script>
+  <script src="src/Preloader.js"></script>
+  <script src="src/MainMenu.js"></script>
+  <script src="src/Howto.js"></script>
+  <script src="src/Game.js"></script>
+
+</head> 
+
+<body><!--Esta etiqueta me creo un checkbox para poder hacer mi menu desplegble y tambien tiene un codigo de simbolo que es el del simbolo de menu que se ve en la esquina superior izquierda tiene las etiquetas de estilo de cada funcion--> 
+<input type="checkbox" id="menutoggle">
+<label for="menutoggle" class="menu-icon">&#9776;</label>
+ <!--  mi header que es fijo si se mueve el scroll con link al index-->
+<header> 
+<div id="brand"> <a class="tp" href="Index.html" target="_self"> (The) (Dark) (Knight) </a> </div> 
+</header> 
+
+ <!--mi menu desplegable-->
+<nav class="menu" style="position:fixed"> 	 	
+	<ul> 
+    	<li><a id="batman" class="ms" href="Batman.html"> Batman </a>
+                   
+        </li>
+        <li><a id="enemies" class="ms" href="enemies.html"> Enemies</a> 
+        </li> 
+        <li><a id="ghotam" class="ms" href="gotham.html"> Ghotam  </a> </li>
+        <li><a id="comrades" class="ms" href="Comrades.html">Comrades</a> </li>
+        <li><a id="news" class="ms" href="news.html">News</a> </li>
+        <li><a id="about" class="ms" href="aboutus.html"> About us </a> </li>
+        <li><a id="game" class="ms" href="Game.html"> Game </a> </li>  
+  </ul>
+
+</nav>
+<script>
+(function() {
+  var game = new Phaser.Game(320, 480, Phaser.CANVAS, 'game');
+  game.state.add('Boot', Ball.Boot);
+  game.state.add('Preloader', Ball.Preloader);
+  game.state.add('MainMenu', Ball.MainMenu);
+  game.state.add('Howto', Ball.Howto);
+  game.state.add('Game', Ball.Game);
+  game.state.start('Boot');
+})();
+</script>
+
+</body> 
+</html>

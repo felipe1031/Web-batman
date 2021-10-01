@@ -1,0 +1,28 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de estilos con CSS</title>
+<style type="text/css">
+  h1 { color: red;  font-family: Arial;   font-size: large;  }
+  p  { color: gray; font-family: Verdana; font-size: medium; }
+</style>
+</head>
+ 
+<body>
+  <h1>Titular de la página</h1>
+  <p>Un párrafo de texto no muy largo.</p>
+</body>
+</html> http://www.notchstudio.com/
+http://www.planet-science.com/categories/under-11s.aspx
+http://www.ucreative.com/inspiration/40-cool-website-design-ideas-you-should-check/
+<abbr> abreviation 
+
+http://webdesignerwall.com/tutorials/advanced-css-menu
+http://librosweb.es/libro/css/capitulo_9/estilos_avanzados_3.html
+http://www.spanish-translator-services.com/espanol/t/007/text-shadow.html
+http://codepen.io/dimsemenov/pen/GAIkt
+http://blog.adlo.es/2007/08/swipe_of_the_week_12apr1999_eddy_newell_vs_john_romita_jr/
+http://bamsmackpow.com/2014/12/01/report-marc-silvestri-draw-batman-book-2015/
